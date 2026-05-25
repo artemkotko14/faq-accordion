@@ -1,0 +1,139 @@
+@use "sass:math";
+@import "./variables";
+@mixin flex-center($direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}
+@mixin text-preset-1 {
+  font-size: rem(56);
+  line-height: line-height(66, 56);
+  letter-spacing: 0%;
+}
+@mixin text-preset-2 {
+  font-size: rem(18);
+  line-height: line-height(21, 18);
+  letter-spacing: 0%;
+}
+@mixin text-preset-3 {
+  font-size: rem(16);
+  line-height: line-height(24, 16);
+  letter-spacing: 0%;
+}
+@function rem($px, $base: 16) {
+  @return ($px / $base) * 1rem;
+} // converts px to rem
+@function line-height($px, $font-size) {
+  @return ($px / $font-size);
+} // converts px to unitless
+
+body {
+  font-family: "Work Sans", sans-serif;
+  min-height: 100svh;
+  background-image: url(/assets/images/background-pattern-mobile.svg);
+  background-repeat: no-repeat;
+  background-color: $purple-100;
+  @include flex-center(column);
+}
+
+.card {
+  max-width: rem(327);
+  background-color: $white;
+  border-radius: 8px;
+  @include flex-center(column);
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: rem(24);
+}
+.card-header {
+  @include flex-center(row);
+  gap: 1.5rem;
+  img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+.card-title {
+  color: $purple-950;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 2rem;
+}
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  border-bottom: 1px solid $purple-100;
+
+  &:last-of-type {
+    border: none;
+    margin: 0;
+    gap: 0;
+    & .accordion-panel {
+      padding: 1.5rem 0 0;
+    }
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+.accordion-icon {
+  width: rem(30);
+  height: rem(30);
+}
+.accordion[open] .accordion-icon {
+  content: url("/assets/images/icon-minus.svg");
+}
+.accordion-trigger {
+  list-style: none;
+
+  @include flex-center(row);
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.accordion-trigger::-webkit-details-marker {
+  display: none;
+}
+.accordion-heading {
+  color: $purple-950;
+  font-weight: 600;
+
+  font-size: 1rem;
+}
+.accordion-panel {
+  font-weight: 400;
+  line-height: 150%;
+
+  font-size: rem(14);
+  color: $purple-600;
+  padding-bottom: 1.5rem;
+}
+@media screen and (min-width: 600px) {
+  body {
+    background-image: url(/assets/images/background-pattern-desktop.svg);
+  }
+  .card {
+    max-width: rem(600);
+    border-radius: 16px;
+    padding: rem(40);
+  }
+  .card-header {
+    margin-bottom: 0.5rem;
+  }
+  .card-header img {
+    width: rem(40);
+    height: rem(40);
+  }
+  .card-title {
+    @include text-preset-1();
+  }
+  .accordion-heading {
+    @include text-preset-2();
+  }
+  .accordion-panel {
+    @include text-preset-3();
+  }
+}
