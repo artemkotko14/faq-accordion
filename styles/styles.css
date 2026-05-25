@@ -2,6 +2,7 @@ body {
   font-family: "Work Sans", sans-serif;
   min-height: 100svh;
   background-image: url(../assets/images/background-pattern-mobile.svg);
+  background-size: 100% auto;
   background-repeat: no-repeat;
   background-color: hsl(275, 100%, 97%);
   display: flex;
