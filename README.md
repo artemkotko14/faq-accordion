@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github page](https://github.com/artemkotko14/faq-accordion)
+- Live Site URL: [Webpage](https://artemkotko14.github.io/faq-accordion/)
 
 ## My process
 
