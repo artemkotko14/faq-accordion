@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
 ### Links
 
@@ -40,7 +40,6 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
 - Flexbox
 - SASS
 - Mobile-first workflow
@@ -48,29 +47,11 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
+I learned how to build accessible accordions using the semantic <details> and <summary> elements, and how to style their open state with selectors like .accordion[open] without using JavaScript.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+For continued development, I want to improve my understanding of accessible interactive components such as accordions and disclosures. I also plan to continue practicing responsive layouts, cleaner SCSS architecture, and more advanced state styling using CSS selectors like [open] and pseudo-elements instead of relying on JavaScript for simple UI interactions.
 
 ### Useful resources
 
