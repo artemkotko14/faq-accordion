@@ -47,7 +47,7 @@ Users should be able to:
 
 ### What I learned
 
-I learned how to build accessible accordions using the semantic <details> and <summary> elements, and how to style their open state with selectors like .accordion[open] without using JavaScript.
+I learned how to build accessible accordions using the semantic `<details>` and `<summary>` elements, and how to style their open state with selectors like `.accordion[open]` without using JavaScript.
 
 ### Continued development
 
