@@ -18,7 +18,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   align-items: flex-start;
   gap: 1.5rem;
   padding: 1.5rem;
@@ -130,4 +129,4 @@ body {
     line-height: 1.5;
     letter-spacing: 0%;
   }
-}/*# sourceMappingURL=styles.css.map */
+} /*# sourceMappingURL=styles.css.map */
